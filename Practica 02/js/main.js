@@ -65,7 +65,14 @@ $(document).ready(() => {
         console.log(alumnos);
         alumnos.forEach((v,k) => {
             console.log(`Key ${k}, value ${v}`);
-            $("div.ajax").append(`<div> Alumno ${k}, Nombre: ${v.nombre}, Edad: ${v.edad}, Semestre: ${v.semestre}</div>`);
+            $("div.ajax").append(
+                `<div> Alumno ${k+1}
+                    <ol>
+                        <li>Nombre: ${v.nombre}</li>
+                        <li>Edad: ${v.edad}</li>
+                        <li>Semestre: ${v.semestre}</li>
+                    </ol>
+                </div>`);
         });
     })
     
