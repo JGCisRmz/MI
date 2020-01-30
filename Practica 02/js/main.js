@@ -66,8 +66,8 @@ $(document).ready(() => {
         alumnos.forEach((v,k) => {
             console.log(`Key ${k}, value ${v}`);
             $("div.ajax").append(
-                `<div> Alumno ${k+1}
-                    <ol>
+                `<div> <span>Alumno ${k+1}</span> 
+                    <ol class="info">
                         <li>Nombre: ${v.nombre}</li>
                         <li>Edad: ${v.edad}</li>
                         <li>Semestre: ${v.semestre}</li>
