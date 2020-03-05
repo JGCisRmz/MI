@@ -1,0 +1,15 @@
+npm init
+// configurarlo hasta que nos genere nuestro archivo
+
+npm install -s install
+Generamos un index.html
+Creamos una carpeta js y generar un archivo main.js
+
+// Instal facil y bonito
+npm install -g browserify
+"browser" : "browserify js/main.js > js/bundle.js"
+
+// instal largo y feo
+npm install -s browserify
+node .\node_modules\browserify\bin\cmd.js js/main.js
+node .\node_modules\browserify\bin\cmd.js js/main.js -o js/bundle.js
